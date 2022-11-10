@@ -87,25 +87,31 @@
             </section>
 
             <!-- Formulário de Contato -->
-            <form action="">
+            <form method="post" action="">
                 <fieldset>
                     <legend>Entre em contato:</legend>
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="seu.email@mail.com">
-                    <input type="tel" placeholder="(00) 0 0000 0000">
+                    
+                    <input type="text" name="id_nome" placeholder="Nome" required>
+
+                    <input type="email" name="mail" placeholder="seu.email@mail.com" required>
+                    
+                    <input type="tel" name="fone" placeholder="(00) 0 0000 0000" required>
+                    
                     <label for="contato"></label>
-                    <select name="contato" id="contato">
+                    <select name="contato" id="contato" required>
                         <option>Selecione seu melhor contato</option>
                         <option value="Telefone" id="contato">Telefone</option>
                         <option value="WhatsApp" id="contato">WhatsApp</option>
                         <option value="Mensagem" id="contato">Mensagem</option>
                         <option value="E-mail" id="contato">E-mail</option>
                     </select>
+                    
                     <br><br>
+                    
                     <textarea name="msg" id="msg" cols="175" rows="5"></textarea>
                 </fieldset>
                 <br>
-                <input type="button" value="Enviar Dados">
+                <input type="submit">
             </form>
         </main>
         <hr>

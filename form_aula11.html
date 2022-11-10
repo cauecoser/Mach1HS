@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cauê Coser">
+    <title>Formulário Aula 11</title>
+</head>
+
+<body style="font: 1em sans-serif;margin-left: 150px;">
+    <h1 style="text-align: left;">Aliste-se</h1>
+
+    <form style="width:410px;" method="post" action="http://mach1.great-site.net/cadastroRecruta.php"
+        enctype="multipart/form-data">
+
+        <label>Seu e-mail
+            <br>
+            <input style="width:400px;" type="text" name="email" placeholder="seu.email@mail.com" required>
+        </label>
+        <br><br>
+        <label>Senha
+            <br>
+            <input style="width:400px;" type="password" name="senha" placeholder="Crie uma senha" required>
+        </label>
+        <br><br>
+        <label>Nome completo:
+            <br>
+            <input style="width:400px;" type="text" name="nomeCompleto" placeholder="Informe o seu nome" required>
+        </label>
+        <br><br>
+        <label>CPF (Apenas números):
+            <br>
+            <input style="width:400px;" type="text" name="cpf" placeholder="00000000000" required>
+        </label>
+        <br><br>
+        <label>RG (Apenas números):
+            <br>
+            <input style="width:400px;" type="text" name="rg" placeholder="Informe o seu nome" required>
+        </label>
+        <br><br>
+        <label>Data de nascimento:
+            <br>
+            <input style="width:400px;" type="date" name="nascimento" placeholder="Informe o seu nome" required>
+        </label>
+        <br><br>
+        <fieldset>
+            <legend>Necessidades Especiais</legend>
+            <input type="radio" name="necessidadesEspeciais" value="sim" id="sim" required>
+            <label for="sim">Sim</label><br><br>
+            <input type="radio" name="necessidadesEspeciais" value="nao" id="nao" required>
+            <label for="nao">Não</label>
+        </fieldset>
+        <br><br>
+        <label for="estado">Estado de residência</label>
+        <select name="estado" id="estado" required>
+            <option>Selecione o seu estado</option>
+            <option value="sp">São Paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="sc">Santa Catarina</option>
+            <option value="rs">Rio Grande do Sul</option>
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>Especialização Desejada</legend>
+            <input type="checkbox" id="esp1" name="especializacao1" required>
+            <label for="esp1">Mecânica das Aeronaves (Back-end)</label>
+            <br><br>
+            <input type="checkbox" id="esp2" name="especializacao1" required>
+            <label for="esp2">Montagem das Aeronaves (Front-end)</label>
+            <br><br>
+            <input type="checkbox" id="esp3" name="especializacao1" required>
+            <label for="esp3">Engenheiro das Aeronaves (FullStack)</label>
+            <br><br>
+            <input type="checkbox" id="esp4" name="especializacao1" required>
+            <label for="esp4">Piloto (Tester)</label>
+            <br><br>
+            <input type="checkbox" id="esp4" name="especializacao1" required>
+            <label for="esp4">Operador de Tráfego Aéreo (Scrum Master)</label>
+        </fieldset>
+        <br><br>
+        <label for="foto">Adicione sua foto:</label>
+        <input type="file" name="foto" id="foto" required>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
