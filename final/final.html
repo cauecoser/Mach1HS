@@ -36,7 +36,7 @@
                                 <a href="#certs">Cursoso e Certificados</a>
                             </th>
                             <th style="background-color: rgb(238, 238, 39);">
-                                <a href="./assets/video.mp4" target="_blank">Vídeo de Apresentação</a>
+                                <a href="./video.html" target="_blank" controls>Vídeo de Apresentação</a>
                             </th>
                         </thead>
                     </table>
@@ -144,15 +144,15 @@
                             <tr>
                                 <td width="50%">
                                     <label for="input1">Nome: </label><br>
-                                    <input type="text" size=80 id="input1" placeholder="Escreva o seu nome"><br><br>
+                                    <input maxlength="80" type="text" name="nome" size=80 id="input1" placeholder="Escreva o seu nome"><br><br>
                                     <label for="input2">E-mail: </label><br>
-                                    <input type="email" size=80 id="input2" placeholder="Seu melhor e-mail"><br><br>
+                                    <input maxlength="50" type="email" name="mail" size=80 id="input2" placeholder="Seu melhor e-mail"><br><br>
                                     <label for="input3">Telefone: </label><br>
-                                    <input type="tel" size=80 id="input3" placeholder="Seu telefone">
+                                    <input maxlength="15" type="tel" name="fone" size=80 id="input3" placeholder="Seu telefone">
                                 </td>
                                 <td>
-                                    <label>Sua mensagem (até 300 caracteres): <textarea cols="85"
-                                            rows="9"></textarea></label>
+                                    <label>Sua mensagem (até 300 caracteres): <textarea name="message" cols="85"
+                                            rows="6" maxlength="300" style="line-height: 22px;"></textarea></label>
                                 </td>
                             </tr>
                         </table>
